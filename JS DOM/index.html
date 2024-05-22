@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <h1 id="title">Hello World</h1>
+    <button onclick="Change()">Change</button>
+    <input id="num1" >
+    <input id="num2">
+    <button onclick="btn()">Add</button>
+    <p id ="Result">Result</p>
+<script>
+    //document.getElementById("title").textContent= "Bye World"
+    // const a= document.getElementById("para");
+    // a.textContent = "Sriman"
+    // function Change(){
+    //     document.getElementById("title").textContent= "Bye World"
+
+    // }
+
+    var box1=document.getElementById("num1")
+    var box2=document.getElementById("num2")
+    var Result=document.getElementById("Result")
+
+    var box1val=Number(box1.value);
+    var box2val=Number(box2.value);    
+
+    var total = box1val + box2val
+
+    function btn(){
+        var box1val=Number(box1.value);
+    var box2val=Number(box2.value);    
+
+    var total = box1val + box2val
+        Result.textContent=total
+    }
+</script>
+</body>
+</html>
